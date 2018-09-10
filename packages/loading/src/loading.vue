@@ -9,7 +9,7 @@
         <svg v-if="!spinner" class="circular" viewBox="25 25 50 50">
           <circle class="path" cx="50" cy="50" r="20" fill="none"/>
         </svg>
-        <i v-else :class="spinner"></i>
+        <component v-else :is="spinner"></component>
         <p v-if="text" class="el-loading-text">{{ text }}</p>
       </div>
     </div>
